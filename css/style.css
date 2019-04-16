@@ -1,0 +1,679 @@
+/*css for LBCC faculty pages*/
+
+body {
+    background: #fff;
+    color: #222;
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: inherit;
+    position: relative;
+    cursor: default;
+    line-height: 1.5em;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1150px;
+    margin-top: -20px;
+}
+.faculty-header{
+    max-width: 1120px;
+    border-bottom: 1px solid #eee;
+    margin: 10px auto;
+    overflow: auto;
+}
+.faculty-header h1{
+	float:left;
+	font-size:36px;
+	margin-bottom:0;
+    font-weight: 200;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 20px;
+}
+.dataTables_length {
+  float: right;
+  width: 120px;
+}
+.dataTables_length select {
+    -webkit-appearance: none !important;
+    background-color: #fafafa;
+    background-image: url('down-arrow.png');
+    background-position: 70% center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    color: rgba(0,0,0,0.75);
+    line-height: normal;
+    border-radius: 0;
+    height: 2.3125rem;
+}
+.dataTables_paginate {
+    margin: 0;
+    padding: 0;
+}
+.breadcrumbs{
+	border:0;
+	background:transparent;
+	float:right;
+	margin-top:30px;
+}
+.breadcrumbs>* {
+	text-transform: unset;
+    font-size: 15px;
+	float: none;
+}
+.breadcrumbs > *:before{
+	content: none;
+	font-family: "FontAwesome";
+}
+/* @media only screen and (max-width: 40.063em) { 
+	.faculty-header h1,.breadcrumbs, .breadcrumbs > *{
+		float:none;
+		text-align:center;
+	}
+	.breadcrumbs{
+		margin-top:0;
+	}
+}*/
+#faculty-table table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
+    display: table-cell;
+    line-height: 1.125rem;
+    padding: 0.5625rem 0.625rem;
+    font-size: 0.875rem;
+    text-align: left;
+}
+#faculty-table table thead {
+    background: #f5f5f5;
+}
+#faculty-table table tr.even, table tr.alt, table tr:nth-of-type(even) {
+    background: #bcd4ec;
+}
+#faculty-table table tr.even, table tr.alt, table tr:nth-of-type(odd) {
+    background: #eeeeee;
+}
+.faculty-dir {
+    border: 1px solid #E1EBF1;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 1.25rem;
+}
+.faculty-dir thead th {
+    color: #FFFFFF;
+    background-color: #2d58a7;
+}
+ul.sidenav > li:hover > a:hover {
+    background-color: #2d58a7;
+    color: #ffffff;
+}
+.faculty-body {
+max-width: 1120px;
+display: block;
+margin: 0 auto;
+}
+.faculty-left {
+    width: 25%;
+    float: left;
+    border-right: solid 1px #666;
+    margin: 0 20px 0 -20px;
+    padding: 0 0 0 15px;
+}
+.faculty-container {
+    width: 75%;
+    float: left;
+    padding: 0 0 0 15px;
+    margin: 0 0 0 -15px;
+}
+.faculty-info {
+    padding: 10px;
+    line-height: 1.4em;
+    font-size: 1.3em;
+    padding-right: 10px;
+}
+.faculty-bio p {
+	font-size: 1.2em;
+}
+.faculty-info h1, .faculty-bio h1, .departments h1 {
+	font-size: 1.7em;
+	color: #2d58a7;
+    margin-top: 0;
+}
+.faculty-info h2 {
+	font-size: 1.3em;
+    margin-top: 0;
+}
+.faculty-info h3 {
+	font-size: 1.1em;
+	margin: 0 0 20px 0;
+}
+.headshot img {
+    max-width: 250px;
+}
+.courseBio {
+	border: solid 1px;
+	width: 75%;
+	margin: auto;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.tablink {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #2d58a7;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.active, .btn:hover {
+	background-color: #93b8de;
+    color: #000000;
+}
+/*Style the tabs*/
+.tabs {
+    margin-top: 20px;
+    max-width: 800px;
+}
+.tablink {
+float: left;
+    border-top-color: initial;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: initial;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: none;
+    border-left-color: initial;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    outline: none;
+cursor: pointer;
+padding: 14px 16px;
+font-size: 17px;
+width: auto;
+min-width: 100px;
+border-top-left-radius: 1em;
+border-top-right-radius: 1em;
+}
+
+.tablink:hover {
+  background-color: #93b8de !important; 
+  color: #000000;
+}
+.tablink a{
+  color: #ffffff;
+}
+.tabcontent h1 {
+  text-align: center;
+}
+.tabcontent p {
+	font-size: 1.2em;
+    width: 75%;
+    margin: 10px auto;
+    line-height: 1.5em;
+}
+.tab-info {
+    border: solid 1px;
+    width: 50%;
+    margin: 20px 0 0 -30px;
+    padding: 10px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 10px;
+  clear: both;
+  border: solid 1px;
+  text-align: center;
+}
+.tab-box {
+    /*border-left: solid 1px;
+    border-right: solid 1px;
+    border-bottom: solid 1px;*/
+    margin: 20px 0 0 0;
+}
+@media (min-width: 768px) and (max-width: 1116px) {
+.headshot img {
+    max-width: 90%;
+}
+.faculty-left {
+width: 35%;
+}
+.faculty-container {
+    width: 65%;
+}
+.tablink {
+    border-bottom: solid 1px;
+    border-radius: 1em;
+    margin: 5px auto;
+    width: 50%;
+}
+.faculty-info {
+    font-size: 1.1em;
+}
+}
+@media (min-width: 414px) and (max-width: 767px) {
+.headshot img {
+    max-width: 95%;
+    margin: 10px auto;
+    display: inherit;
+}
+.faculty-left {
+    width: 100%;
+    float: none;
+}
+.faculty-container {
+    border-left: solid 1px #666;
+    width: 100%;
+    float: none;
+}
+.faculty-body {
+    margin: 20px auto 0 auto;
+}
+.tablink {
+    border-bottom: solid 1px;
+    border-radius: 1em;
+    margin: 5px;
+}
+.tabs {
+    line-height: 1.1em;
+    padding-bottom: 25px;
+}
+.tabcontent p {
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+}
+@media (min-width: 320px) and (max-width: 413px) {
+.headshot img {
+    max-width: 95%;
+    margin: 10px 0;
+    display: inherit;
+}
+.faculty-left {
+    width: 100%;
+    float: none;
+}
+.faculty-container {
+    border-left: solid 1px #666;
+    width: 100%;
+    float: none;
+}
+.faculty-bio p {
+    margin: 0;
+}
+.tablink {
+    border-bottom: solid 1px;
+    border-radius: 1em;
+    margin: 5px auto;
+    width: 50%;
+}
+.tabs {
+    line-height: 1.1em;
+}
+.tabcontent h1 {
+    font-size: 1.5em;
+}
+.tabcontent p {
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+.faculty-body {
+    margin: 20px auto 0 auto;
+}
+}
+
+}
+.courseBio {
+    border: solid 1px;
+    padding: 10px;
+    font-style: italic;
+}
+
+/*Accordion*/
+.accordion {
+  background-color: #eee;
+  border-bottom: solid 1px !important;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  line-height: 1.5em;
+  transition: all 0s ease 0s;
+}
+.dataTables_paginate button:hover, button:focus {
+    background-color: #93b8de !important;
+    transition: all 0s ease 0s;
+    color: #000000;
+}
+.active, .accordion:hover {
+  background-color: #93b8de; 
+  color: #ffffff;
+}
+.tablink, .active {
+  background-color: #2d58a7; 
+  color: #ffffff;
+}
+.panel {
+  padding: 0;
+  display: none;
+  background-color: white;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p, .panel li, .panel dl {
+    color: #333;
+    font-size: 14px;
+    padding: 0 0 0 10px;
+}
+.panel ul, li {
+	list-style-type: none;
+	margin: 0;
+}
+.panel a, .faculty-dir a {
+    font-weight: normal;
+    color: #0b4da2;
+    text-decoration: underline;
+    line-height: 2em;
+    transition: all 0s ease 0s;
+}
+.panel li:hover, .panel li:hover a{
+  background-color: #2d58a7; 
+  color: #ffffff;
+  width: 100%;
+}
+input[type=text], select {
+  width: 50%;
+  padding: 10px 20px;
+  margin: 1px 0 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+ /*Left navigation*/
+ #faculty-nav,
+#faculty-nav ul,
+#faculty-nav ul li,
+#faculty-nav ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1.4em;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  top: 0;
+  max-width: 260px;
+}
+#faculty-nav {
+    float: left;
+}
+#faculty-nav ul ul {
+  display: none;
+}
+.align-right {
+  float: right;
+}
+#faculty-nav > ul > li > a {
+    padding: 15px 40px 15px 20px;
+    border-top: 1px solid #ffffff;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #000000;
+    background: #c7c4c4;
+}
+#faculty-nav > ul > li.active > a,
+#faculty-nav > ul > li.open > a {
+    color: #222;
+    background: #cfd1d6;
+}
+#faculty-nav > ul > li > a:hover,
+#faculty-nav > ul > li.open > a {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid #1682ba;
+  color: #ffffff;
+  background: #005b96;
+}
+#faculty-nav > ul > li:last-child > a,
+#faculty-nav > ul > li.last > a {
+}
+.holder {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.holder::after,
+.holder::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  right: 20px;
+  z-index: 10;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.holder::after {
+  top: 17px;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+}
+#faculty-nav > ul > li > a:hover > span::after,
+#faculty-nav > ul > li.active > a > span::after,
+#faculty-nav > ul > li.open > a > span::after {
+  border-color: #ffffff;
+}
+.holder::before {
+  top: 18px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-top-color: inherit;
+  border-left-color: inherit;
+}
+#faculty-nav ul ul li a {
+  cursor: pointer;
+  border-bottom: 1px solid #32373e;
+/*  border-left: 1px solid #32373e;
+  border-right: 1px solid #32373e; */
+  padding: 10px 30px;
+  z-index: 1;
+  text-decoration: none;
+  font-size: 13px;
+  color: #ffffff;
+  background: #7289ab;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+#faculty-nav ul ul li:hover > a,
+#faculty-nav ul ul li.open > a,
+#faculty-nav ul ul li.active > a {
+  /*background: #0b416f;*/
+  color: #ffffff;
+}
+#faculty-nav ul ul li:first-child > a {
+  box-shadow: none;
+}
+#faculty-nav ul ul ul li > a {
+    background: #acbfd2;
+}
+#faculty-nav ul ul ul li:first-child > a {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+#faculty-nav ul ul ul li a {
+  padding-left: 40px;
+}
+#faculty-nav > ul > li > ul > li:last-child > a,
+#faculty-nav > ul > li > ul > li.last > a {
+  border-bottom: 0;
+}
+#faculty-nav > ul > li > ul > li.open:last-child > a,
+#faculty-nav > ul > li > ul > li.last.open > a {
+  border-bottom: 1px solid #32373e;
+}
+#faculty-nav > ul > li > ul > li.open:last-child > ul > li:last-child > a {
+  border-bottom: 1px solid #1682ba;
+}
+#faculty-nav ul ul li.has-sub > a::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  right: 20px;
+  z-index: 10;
+  top: 11.5px;
+  border-top: 2px solid #eeeeee;
+  border-left: 2px solid #eeeeee;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+#faculty-nav ul ul li.active > a::after,
+#faculty-nav ul ul li.open > a::after,
+#faculty-nav ul ul li > a:hover::after {
+  border-color: #ffffff;
+}
+#faculty-nav .advising  ul li a {
+  background: #acbfd2;
+  padding-left: 40px;
+}
+
+#faculty-table {
+  float: left;
+  width: 75%;
+  padding: 0 0 0 20px;
+}
+
+.paginate_button, .button {
+    width: 75px;
+    padding: 10px 30px;
+    font-size: 0.9em;
+    background-color: #007095;
+    color: #ffffff;
+}
+.paginate_button button, .current {
+    background-color: #008cba;
+}
+@media screen (min-width: 769px) and (max-width: 1024px) { 
+#faculty-nav{
+    max-width: 210px;
+	}
+}
+
+@media screen and (max-width: 768px) { 
+#faculty-nav{
+    max-width: 180px;
+	}
+#faculty-nav ul li a {
+    max-width: 175px;
+    }
+}
+
+@media screen and (max-width: 414px) { 
+.breadcrumbs {
+    margin: 0 0 0 -10px;
+    font-size: 10px;
+    display: -webkit-box;
+    float: left;
+}
+.breadcrumbs>* {
+    font-size: 12px;
+}
+.faculty-header h1 {
+    font-size: 30px;
+}
+#faculty-nav {
+    max-width: 370px;
+}
+#faculty-nav ul, #faculty-nav ul li, #faculty-nav ul li a {
+    width: 370px;
+    max-width: 370px;
+    }
+/* Force table to not be like tables anymore */
+#faculty-table	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+#faculty-table {
+    width: 370px;
+    padding: 10px 0 0 0;
+}
+#faculty-table	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+#faculty-table	tr { border: 1px solid #ccc; }
+	
+#faculty-table	td { 
+		/* Behave  like a "row" */
+		border: none;
+		position: unset;
+		display: block !important;
+	    line-height: 0.5em;
+        font-size: 13px;
+	}
+	
+#faculty-table	td:before { 
+		display: none;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Name"; }
+	td:nth-of-type(2):before { content: "Department"; }
+	td:nth-of-type(3):before { content: "Phone"; }
+	td:nth-of-type(4):before { content: "Email"; }
+}
+.panel a, .faculty-dir a {
+    line-height: 0.5em;
+}
+@media screen and (min-width: 320px) and (max-width: 413px) { 
+#faculty-nav {
+    max-width: 300px;
+}
+#faculty-nav ul, #faculty-nav ul li, #faculty-nav ul li a {
+    width: 300px;
+    max-width: 300px;
+    }
+#faculty-table {
+    width: 300px;
+    padding: 10px 0 0 0;
+}
+
